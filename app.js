@@ -16,8 +16,8 @@ console.log(customer1);
 let customer2= {
     name: "John",
     age: 25,
-    address: "New York"
-    salary: 50000
+    address: "New York",
+    salary: '50000',
     items: [
         {
             id: 1,
@@ -28,7 +28,7 @@ let customer2= {
                     id: 1,
                     name: "variant1",
                     price: 10
-                    
+
                 },
                 {
                     id: 2,
@@ -60,4 +60,16 @@ console.log(customer2.address);
 console.log(customer2.salary);
 console.log(customer2.items[2].name);
 console.log(customer2.father.name);
-    
+
+//DOM (document Object Model) Manipulation
+
+//document.write("<h2>Hello World</h2>")
+
+console.log(document.title);
+
+let heading = document.getElementById ("heading");
+
+heading.innerText = "Ayodhya Senarathna";
+
+
+//console.log(heading);
