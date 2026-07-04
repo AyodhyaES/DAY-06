@@ -73,3 +73,8 @@ heading.innerText = "Ayodhya Senarathna";
 
 
 //console.log(heading);
+
+function changeHeading(){
+    heading. innerText = "Ayodhya Senarathna"
+    console.log("Button Clicked");
+}
