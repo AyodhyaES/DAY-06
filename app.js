@@ -69,12 +69,74 @@ console.log(document.title);
 
 let heading = document.getElementById ("heading");
 
-heading.innerText = "Ayodhya Senarathna";
+//heading.innerText = "Ayodhya Senarathna";
 
 
 //console.log(heading);
 
-function changeHeading(){
-    heading. innerText = "Ayodhya Senarathna"
-    console.log(" Clicked");
+let heading = document.getElementById("heading");
+// heading.innerText = "Sharada";
+
+// console.log(heading.);
+let number = 0;
+function increaseValue() {
+    heading.innerText = "Ayodhya"+(++number);
+    console.log("Clicked");
+    
+}
+
+function decreaseValue() {
+    heading.innerText = "Ayodhya"+(--number);
+}
+
+//function changeHeading() {
+
+ //   let txtInput = document.getElementById("inputText");
+
+//    let userInput = txtInput.value; 
+
+ //   console.log(userInput);
+    
+//    let heading = document.getElementById("heading");
+
+//    heading.innerText=userInput;
+
+    
+//}
+function changeHeading() {
+
+    let txtInput = document.getElementById("inputText");
+
+    let userInput = txtInput.value; 
+
+    console.log(userInput);
+    
+    let heading = document.getElementById("heading");
+
+    heading.innerText=userInput;
+
+    
+}
+
+let customerList = [];
+
+function btnAddCustomerOnAction(){
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+
+    let customer={
+        name:txtName,
+        address:txtAddress,
+        age:txtAge,
+        email:txtEmail,
+        salary:txtSalary
+    }
+
+    customerList.push(customer);
+
+    console.log(customerList);
+      
 }
